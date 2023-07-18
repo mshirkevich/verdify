@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-media.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <title>Verdify</title>
+</head>
+
+<body class="shopping-list">
+    <header class="header">
+        <div class="header__wrap header__wrap-full container"><a class="header__logo mr-r" href="#"><img
+                    src="img/logo.png" alt=""></a>
+            <nav class="header__menu header__menu-inner h-menu">
+                <div class="h-menu__head">
+                    <div class="h-menu__menuclose"></div>
+                </div>
+                <ul class="h-menu__wrap h-menu__wrap--fl-strt">
+                    <li class="h-menu__item"><a class="h-menu__link" href="#">Weekmenu</a></li>
+                    <li class="h-menu__item"><a class="h-menu__link" href="#">Favoriete recepten</a></li>
+                    <li class="h-menu__item current"><a class="h-menu__link" href="#">Boodschappenlijst</a></li>
+                </ul>
+            </nav>
+            <div class="header__menuopen"><span></span></div>
+            <div class="header__btns">
+                <button class="w-btn"><svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path id="&#238;&#153;&#168;" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.708 10.2744C15.5908 10.1514 15.4443 10.0898 15.2686 10.0898H4.79199L5.31934 9.01758L14.0557 9C14.208 9 14.3398 8.95312 14.4512 8.85938C14.5625 8.76562 14.6299 8.64844 14.6533 8.50781L15.8662 1.72266C15.9014 1.53516 15.8574 1.37109 15.7344 1.23047C15.6113 1.08984 15.4561 1.01953 15.2686 1.01953L4.15918 0.966797L4.07129 0.527344C4.03613 0.386718 3.95996 0.269532 3.84277 0.175781C3.72559 0.0820308 3.59668 0.0351562 3.45605 0.0351562H0.731445C0.567382 0.0351562 0.423829 0.0966791 0.300781 0.219727C0.177734 0.342774 0.116211 0.489257 0.116211 0.65918C0.116211 0.829102 0.177734 0.975585 0.300781 1.09863C0.423829 1.22168 0.567382 1.2832 0.731445 1.2832H2.94629L3.36816 3.25195L4.3877 8.19141L3.06934 10.3359C2.91699 10.5469 2.89941 10.7637 3.0166 10.9863C3.13379 11.209 3.32129 11.3203 3.5791 11.3203H4.68652C4.44043 11.6484 4.31738 12.0117 4.31738 12.4102C4.31738 12.9141 4.49316 13.3418 4.84473 13.6934C5.19629 14.0449 5.62109 14.2207 6.11914 14.2207C6.61719 14.2207 7.04199 14.0449 7.39355 13.6934C7.74512 13.3418 7.9209 12.9141 7.9209 12.4102C7.9209 12.0117 7.80371 11.6484 7.56934 11.3203H10.3994C10.1533 11.6484 10.0303 12.0117 10.0303 12.4102C10.0303 12.9141 10.2061 13.3418 10.5576 13.6934C10.9092 14.0449 11.334 14.2207 11.832 14.2207C12.3301 14.2207 12.7549 14.0449 13.1064 13.6934C13.458 13.3418 13.6338 12.9141 13.6338 12.4102C13.6338 12.0117 13.5166 11.6484 13.2822 11.3203H15.2686C15.4443 11.3203 15.5908 11.2617 15.708 11.1445C15.8252 11.0273 15.8838 10.8838 15.8838 10.7139C15.8838 10.5439 15.8252 10.3975 15.708 10.2744ZM5.60059 7.80469L4.42285 2.19727L14.5479 2.23242L13.5459 7.78711L5.60059 7.80469ZM6.51465 12.8145C6.62012 12.6973 6.67285 12.5625 6.67285 12.4102C6.67285 12.2578 6.62012 12.126 6.51465 12.0146C6.40918 11.9033 6.28027 11.8477 6.12793 11.8477C5.97558 11.8477 5.84375 11.9033 5.73242 12.0146C5.62109 12.126 5.56543 12.2578 5.56543 12.4102C5.56543 12.5625 5.62109 12.6943 5.73242 12.8057C5.84375 12.917 5.97558 12.9727 6.12793 12.9727C6.28027 12.9727 6.40918 12.9199 6.51465 12.8145ZM12.3857 12.4102C12.3857 12.5625 12.333 12.6973 12.2275 12.8145C12.1221 12.9199 11.9932 12.9727 11.8408 12.9727C11.6885 12.9727 11.5566 12.917 11.4453 12.8057C11.334 12.6943 11.2783 12.5625 11.2783 12.4102C11.2783 12.2578 11.334 12.126 11.4453 12.0146C11.5566 11.9033 11.6885 11.8477 11.8408 11.8477C11.9932 11.8477 12.1221 11.9033 12.2275 12.0146C12.333 12.126 12.3857 12.2578 12.3857 12.4102Z"
+                            fill="#041902" />
+                    </svg>
+                    <span>Winkelwagen</span>
+                </button>
+                <div class="account-menu"><span>Mijn account</span>
+                    <ul class="drop-down">
+                        <li class="drop-down__item"><a class="drop-down__link" href="#">Profiel</a></li>
+                        <li class="drop-down__item"><a class="drop-down__link" href="#">Uitloggen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header><a class="back-to-top"></a>
+    <main class="wrapper">
+        <div class="shopping-list-main">
+            <div class="shopping-list-main__wrap container">
+                <div class="shopping-list-main__header">
+                    <div class="shopping-list-main__title">Boodschappenlijst</div>
+                    <button class="shopping-list-main__prnt"><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22.312 6.45312C22.7808 6.45312 23.1792 6.61719 23.5073 6.94531C23.8355 7.27344 23.9995 7.67187 23.9995 8.14062V18.3125C23.9995 18.7813 23.8355 19.1797 23.5073 19.5078C23.1792 19.8359 22.7808 20 22.312 20H19.4995V24.5H4.49951V20H1.68701C1.21826 20 0.819826 19.8359 0.491699 19.5078C0.163573 19.1797 -0.000488281 18.7813 -0.000488281 18.3125V8.14062C-0.000488281 7.67187 0.163573 7.27344 0.491699 6.94531C0.819826 6.61719 1.21826 6.45312 1.68701 6.45312H4.49951V0.5H19.4995V6.45312H22.312ZM5.99951 2V6.45312H17.9995V2H5.99951ZM17.9995 14.75V23H5.99951V14.75H17.9995ZM22.4995 18.3125V8.14062C22.4995 8.01562 22.437 7.95312 22.312 7.95312H1.68701C1.56201 7.95312 1.49951 8.01562 1.49951 8.14062V18.3125C1.49951 18.4375 1.56201 18.5 1.68701 18.5H4.49951V13.25H19.4995V18.5H22.312C22.437 18.5 22.4995 18.4375 22.4995 18.3125ZM20.0386 9.71094C19.8979 9.57031 19.7183 9.5 19.4995 9.5H18.7495C18.5308 9.5 18.3511 9.57031 18.2104 9.71094C18.0698 9.85156 17.9995 10.0234 17.9995 10.2266C17.9995 10.4297 18.0698 10.6094 18.2104 10.7656C18.3511 10.9219 18.5308 11 18.7495 11H19.4995C19.7183 11 19.8979 10.9219 20.0386 10.7656C20.1792 10.6094 20.2495 10.4297 20.2495 10.2266C20.2495 10.0234 20.1792 9.85156 20.0386 9.71094Z"
+                                fill="#091804" />
+                        </svg>
+
+                    </button>
+                </div>
+                <div class="shopping-list-main__body">
+                    <section class="shopping-list-main__basket-table basket-table">
+                        <div class="basket-table__header">
+                            <div class="basket-table__col ingr-col">Ingrediënten</div>
+                            <div class="basket-table__col recipe-col">Recept</div>
+                            <div class="basket-table__col amount-col">Aantal
+                                <div class="icon"><svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path id="&#239;&#145;&#140;" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.62109 3.43359C4.3685 1.68619 6.47395 0.8125 8.9375 0.8125C11.4011 0.8125 13.5065 1.68619 15.2539 3.43359C17.0013 5.181 17.875 7.28645 17.875 9.75C17.875 12.2136 17.0013 14.319 15.2539 16.0664C13.5065 17.8138 11.4011 18.6875 8.9375 18.6875C6.47395 18.6875 4.3685 17.8138 2.62109 16.0664C0.873689 14.319 0 12.2136 0 9.75C0 7.28645 0.873689 5.181 2.62109 3.43359ZM7.90625 6.14062C7.90625 6.71354 8.19271 7 8.76562 7C9.33854 7 9.625 6.71354 9.625 6.14062C9.625 5.56771 9.33854 5.28125 8.76562 5.28125C8.19271 5.28125 7.90625 5.56771 7.90625 6.14062ZM10.3125 13.5312H9.625V8.03125H7.5625V8.375H8.25V13.5312H7.5625V13.875H10.3125V13.5312ZM8.9375 17.957C6.67447 17.957 4.74089 17.155 3.13672 15.5508C1.53254 13.9466 0.730469 12.013 0.730469 9.75C0.730469 7.48697 1.53254 5.55339 3.13672 3.94922C4.74089 2.34504 6.67447 1.54297 8.9375 1.54297C11.2005 1.54297 13.1341 2.34504 14.7383 3.94922C16.3425 5.55339 17.1445 7.48697 17.1445 9.75C17.1445 12.013 16.3425 13.9466 14.7383 15.5508C13.1341 17.155 11.2005 17.957 8.9375 17.957Z"
+                                            fill="black" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                            <div class="basket-table__col remove-col">Verwijderen</div>
+                        </div>
+                        <div class="basket-table__select-all">
+                            <label class="c-check">
+                                <input type="checkbox"><span class="c-check__body"><span
+                                        class="c-check__box"></span><span class="c-check__label">Selecteer
+                                        alles</span></span>
+                            </label>
+                            <div class="icon"><svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path id="&#239;&#145;&#140;" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2.62109 3.43359C4.3685 1.68619 6.47395 0.8125 8.9375 0.8125C11.4011 0.8125 13.5065 1.68619 15.2539 3.43359C17.0013 5.181 17.875 7.28645 17.875 9.75C17.875 12.2136 17.0013 14.319 15.2539 16.0664C13.5065 17.8138 11.4011 18.6875 8.9375 18.6875C6.47395 18.6875 4.3685 17.8138 2.62109 16.0664C0.873689 14.319 0 12.2136 0 9.75C0 7.28645 0.873689 5.181 2.62109 3.43359ZM7.90625 6.14062C7.90625 6.71354 8.19271 7 8.76562 7C9.33854 7 9.625 6.71354 9.625 6.14062C9.625 5.56771 9.33854 5.28125 8.76562 5.28125C8.19271 5.28125 7.90625 5.56771 7.90625 6.14062ZM10.3125 13.5312H9.625V8.03125H7.5625V8.375H8.25V13.5312H7.5625V13.875H10.3125V13.5312ZM8.9375 17.957C6.67447 17.957 4.74089 17.155 3.13672 15.5508C1.53254 13.9466 0.730469 12.013 0.730469 9.75C0.730469 7.48697 1.53254 5.55339 3.13672 3.94922C4.74089 2.34504 6.67447 1.54297 8.9375 1.54297C11.2005 1.54297 13.1341 2.34504 14.7383 3.94922C16.3425 5.55339 17.1445 7.48697 17.1445 9.75C17.1445 12.013 16.3425 13.9466 14.7383 15.5508C13.1341 17.155 11.2005 17.957 8.9375 17.957Z"
+                                        fill="black" />
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="basket-table__group ingr-group">
+                            <div class="ingr-group__title">Groente en fruit</div>
+                            <div class="basket-table__row">
+                                <div class="basket-table__col ingr-col">
+                                    <label class="c-check">
+                                        <input type="checkbox"><span class="c-check__body"><span
+                                                class="c-check__box"></span><span
+                                                class="c-check__label caption">Winterwortel</span></span>
+                                    </label>
+                                </div>
+                                <div class="basket-table__col recipe-col">
+                                    <div class="recipe-category" id="green">A</div>
+                                    <div class="recipe-category" id="red">B</div>
+                                    <div class="recipe-category" id="orange">C</div>
+                                    <div class="recipe-category" id="blue">D</div>
+                                </div>
+                                <div class="basket-table__col amount-col">
+                                    <input type="text" value="2"><span>stuk(s)</span>
+                                </div>
+                                <div class="basket-table__col remove-col">
+                                    <div class="remove"></div>
+                                </div>
+                            </div>
+                            <div class="basket-table__row">
+                                <div class="basket-table__col ingr-col">
+                                    <label class="c-check">
+                                        <input type="checkbox"><span class="c-check__body"><span
+                                                class="c-check__box"></span><span class="c-check__label caption">Rode
+                                                paprika</span></span>
+                                    </label>
+                                </div>
+                                <div class="basket-table__col recipe-col">
+                                    <div class="recipe-category" id="red">B</div>
+                                    <div class="recipe-category" id="blue">D</div>
+                                </div>
+                                <div class="basket-table__col amount-col">
+                                    <input type="text" value="2"><span>stuk(s)</span>
+                                </div>
+                                <div class="basket-table__col remove-col">
+                                    <div class="remove"></div>
+                                </div>
+                            </div>
+                            <div class="basket-table__row">
+                                <div class="basket-table__col ingr-col">
+                                    <label class="c-check">
+                                        <input type="checkbox"><span class="c-check__body"><span
+                                                class="c-check__box"></span><span
+                                                class="c-check__label caption">Sjalot</span></span>
+                                    </label>
+                                </div>
+                                <div class="basket-table__col recipe-col">
+                                    <div class="recipe-category" id="green">A</div>
+                                    <div class="recipe-category" id="red">B</div>
+                                    <div class="recipe-category" id="blue">D</div>
+                                </div>
+                                <div class="basket-table__col amount-col">
+                                    <input type="text" value="2"><span>stuk(s)</span>
+                                </div>
+                                <div class="basket-table__col remove-col">
+                                    <div class="remove"></div>
+                                </div>
+                            </div>
+                            <div class="basket-table__row">
+                                <div class="basket-table__col ingr-col">
+                                    <label class="c-check">
+                                        <input type="checkbox"><span class="c-check__body"><span
+                                                class="c-check__box"></span><span
+                                                class="c-check__label caption">Knoflook</span></span>
+                                    </label>
+                                </div>
+                                <div class="basket-table__col recipe-col">
+                                    <div class="recipe-category" id="green">A</div>
+                                    <div class="recipe-category" id="red">B</div>
+                                    <div class="recipe-category" id="blue">D</div>
+                                </div>
+                                <div class="basket-table__col amount-col">
+                                    <input type="text" value="2"><span>stuk(s)</span>
+                                </div>
+                                <div class="basket-table__col remove-col">
+                                    <div class="remove"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-table__group ingr-group last">
+                            <div class="ingr-group__title">Kruiden</div>
+                            <div class="basket-table__row">
+                                <div class="basket-table__col ingr-col">
+                                    <label class="c-check">
+                                        <input type="checkbox"><span class="c-check__body"><span
+                                                class="c-check__box"></span><span
+                                                class="c-check__label caption">Gedroogde oregano</span></span>
+                                    </label>
+                                </div>
+                                <div class="basket-table__col recipe-col">
+                                    <div class="recipe-category" id="green">A</div>
+                                    <div class="recipe-category" id="red">B</div>
+                                    <div class="recipe-category" id="orange">C</div>
+                                </div>
+                                <div class="basket-table__col amount-col">
+                                    <input type="text" value="2"><span>stuk(s)</span>
+                                </div>
+                                <div class="basket-table__col remove-col">
+                                    <div class="remove"></div>
+                                </div>
+                            </div>
+                            <div class="basket-table__row">
+                                <div class="basket-table__col ingr-col">
+                                    <label class="c-check">
+                                        <input type="checkbox"><span class="c-check__body"><span
+                                                class="c-check__box"></span><span
+                                                class="c-check__label caption">Gedroogde dragon</span></span>
+                                    </label>
+                                </div>
+                                <div class="basket-table__col recipe-col">
+                                    <div class="recipe-category" id="green">A</div>
+                                    <div class="recipe-category" id="red">B</div>
+                                    <div class="recipe-category" id="blue">D</div>
+                                </div>
+                                <div class="basket-table__col amount-col">
+                                    <input type="text" value="2"><span>stuk(s)</span>
+                                </div>
+                                <div class="basket-table__col remove-col">
+                                    <div class="remove"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-table__footer">
+                            <button class="b-btn">Alles verwijderen</button>
+                        </div>
+                    </section>
+                    <aside class="shopping-list-main__recipes-options recipes-options">
+                        <div class="recipes-options__header">Recepten</div>
+                        <div class="recipes-options__list">
+                            <div class="recipe-item odd">
+                                <div class="recipe-item__body">
+                                    <div class="recipe-item__photo"><img src="img/bask1.jpg" alt="">
+                                        <div class="recipe-item__category recipe-category" id="green">A</div>
+                                    </div>
+                                    <div class="recipe-item__desc">
+                                        <div class="recipe-item__title">Open lasagne met pompoen en paddenstoelen</div>
+                                        <div class="recipe-item__text">Met zongedroogde tomaten en verse tijm</div>
+                                        <div class="recipe-item__del"></div>
+                                    </div>
+                                </div>
+                                <div class="recipe-item__count">
+                                    <div class="recipe-item__time">30 min</div>
+                                    <div class="recipe-item__counter">
+                                        <div class="icon"><svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.113 14.8203L9.56226 12.8516C10.1482 12.3828 10.5701 11.75 10.8279 10.9531C11.1091 10.1328 11.2498 9.35938 11.2498 8.63281V6.24219C11.2498 5.44531 10.8044 4.69531 9.91382 3.99219C9.04663 3.28906 8.08569 2.9375 7.03101 2.9375C5.99976 2.9375 5.03882 3.30078 4.14819 4.02734C3.25757 4.73047 2.81226 5.46875 2.81226 6.24219V8.63281C2.81226 9.28906 2.95288 10.0391 3.23413 10.8828C3.53882 11.7031 3.98413 12.3594 4.57007 12.8516L0.948975 14.8203C0.316162 15.1016 -0.000244141 15.418 -0.000244141 15.7695V17.1758C-0.000244141 17.4336 0.0935059 17.6562 0.281006 17.8438C0.468506 18.0312 0.691162 18.125 0.948975 18.125H13.113C13.3708 18.125 13.5935 18.0312 13.781 17.8438C13.9685 17.6562 14.0623 17.4336 14.0623 17.1758V15.7695C14.0623 15.6523 14.0271 15.5469 13.9568 15.4531C13.8865 15.3359 13.8044 15.2422 13.7107 15.1719C13.6404 15.1016 13.5583 15.043 13.4646 14.9961C13.3708 14.9258 13.2888 14.8789 13.2185 14.8555L13.113 14.8203ZM12.9373 17H1.12476V16.0156C1.21851 15.9453 1.31226 15.8867 1.40601 15.8398C1.42944 15.8164 1.45288 15.8047 1.47632 15.8047L5.13257 13.8359C5.48413 13.6484 5.67163 13.3555 5.69507 12.957C5.74194 12.5352 5.60132 12.207 5.27319 11.9727C4.85132 11.6211 4.52319 11.1172 4.28882 10.4609C4.05444 9.78125 3.93726 9.17188 3.93726 8.63281V6.24219C3.93726 5.82031 4.26538 5.35156 4.92163 4.83594C5.60132 4.32031 6.31616 4.0625 7.06616 4.0625C7.81616 4.0625 8.50757 4.32031 9.14038 4.83594C9.79663 5.32812 10.1248 5.79687 10.1248 6.24219V8.63281C10.1248 9.19531 10.0193 9.80469 9.80835 10.4609C9.62085 11.1172 9.30444 11.6211 8.85913 11.9727C8.55444 12.207 8.41382 12.5352 8.43726 12.957C8.48413 13.3555 8.68335 13.6484 9.03491 13.8359L12.5857 15.8047C12.6091 15.8047 12.6443 15.8164 12.6912 15.8398C12.7615 15.8867 12.8435 15.9336 12.9373 15.9805V17ZM17.0505 12.0078L13.4646 10.0391C14.0505 9.57031 14.4841 8.9375 14.7654 8.14062C15.0466 7.32031 15.1873 6.54688 15.1873 5.82031V3.46484C15.1873 2.66797 14.7419 1.91797 13.8513 1.21484C12.9607 0.488281 11.988 0.125 10.9333 0.125C10.2771 0.125 9.62085 0.289063 8.9646 0.617188C8.33179 0.921875 7.80444 1.32031 7.38257 1.8125C8.10913 1.85937 8.57788 1.91797 8.78882 1.98828C9.42163 1.49609 10.1365 1.25 10.9333 1.25C11.7068 1.25 12.4216 1.50781 13.0779 2.02344C13.7341 2.53906 14.0623 3.01953 14.0623 3.46484V5.82031C14.0623 6.38281 13.9568 6.99219 13.7458 7.64844C13.5349 8.30469 13.2068 8.80859 12.7615 9.16016C12.4333 9.41797 12.281 9.74609 12.3044 10.1445C12.3513 10.543 12.5505 10.8359 12.9021 11.0234L16.5232 12.9922C16.5466 13.0156 16.5818 13.0273 16.6287 13.0273C16.699 13.0742 16.781 13.1328 16.8748 13.2031V14.1875H14.5896C14.824 14.375 15.0232 14.75 15.1873 15.3125H17.0505C17.3083 15.3125 17.531 15.2188 17.7185 15.0312C17.906 14.8438 17.9998 14.6211 17.9998 14.3633V12.957C17.9998 12.793 17.9177 12.6289 17.7537 12.4648C17.5896 12.3008 17.4373 12.1836 17.2966 12.1133L17.0505 12.0078Z"
+                                                    fill="black" />
+                                            </svg>
+                                            <span>Personen</span>
+                                        </div>
+                                        <div class="counter">
+                                            <button class="counter__btn counter__btn--dec minus-number-item"></button>
+                                            <input class="counter__input number-input" type="number" value="4" min="1"
+                                                name="quantity">
+                                            <button class="counter__btn counter__btn--inc plus-number-item"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="recipe-item__btn gr-btn">Toevoegen aan winkelwagen</button>
+                            </div>
+                            <div class="recipe-item even">
+                                <div class="recipe-item__body">
+                                    <div class="recipe-item__photo"><img src="img/bask2.jpg" alt="">
+                                        <div class="recipe-item__category recipe-category" id="red">B</div>
+                                    </div>
+                                    <div class="recipe-item__desc">
+                                        <div class="recipe-item__title">Spaghetti met romige wortelsaus</div>
+                                        <div class="recipe-item__text">Met rozemarijn en gebakken champignons</div>
+                                        <div class="recipe-item__del"></div>
+                                    </div>
+                                </div>
+                                <div class="recipe-item__count">
+                                    <div class="recipe-item__time">30 min</div>
+                                    <div class="recipe-item__counter">
+                                        <div class="icon"><svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.113 14.8203L9.56226 12.8516C10.1482 12.3828 10.5701 11.75 10.8279 10.9531C11.1091 10.1328 11.2498 9.35938 11.2498 8.63281V6.24219C11.2498 5.44531 10.8044 4.69531 9.91382 3.99219C9.04663 3.28906 8.08569 2.9375 7.03101 2.9375C5.99976 2.9375 5.03882 3.30078 4.14819 4.02734C3.25757 4.73047 2.81226 5.46875 2.81226 6.24219V8.63281C2.81226 9.28906 2.95288 10.0391 3.23413 10.8828C3.53882 11.7031 3.98413 12.3594 4.57007 12.8516L0.948975 14.8203C0.316162 15.1016 -0.000244141 15.418 -0.000244141 15.7695V17.1758C-0.000244141 17.4336 0.0935059 17.6562 0.281006 17.8438C0.468506 18.0312 0.691162 18.125 0.948975 18.125H13.113C13.3708 18.125 13.5935 18.0312 13.781 17.8438C13.9685 17.6562 14.0623 17.4336 14.0623 17.1758V15.7695C14.0623 15.6523 14.0271 15.5469 13.9568 15.4531C13.8865 15.3359 13.8044 15.2422 13.7107 15.1719C13.6404 15.1016 13.5583 15.043 13.4646 14.9961C13.3708 14.9258 13.2888 14.8789 13.2185 14.8555L13.113 14.8203ZM12.9373 17H1.12476V16.0156C1.21851 15.9453 1.31226 15.8867 1.40601 15.8398C1.42944 15.8164 1.45288 15.8047 1.47632 15.8047L5.13257 13.8359C5.48413 13.6484 5.67163 13.3555 5.69507 12.957C5.74194 12.5352 5.60132 12.207 5.27319 11.9727C4.85132 11.6211 4.52319 11.1172 4.28882 10.4609C4.05444 9.78125 3.93726 9.17188 3.93726 8.63281V6.24219C3.93726 5.82031 4.26538 5.35156 4.92163 4.83594C5.60132 4.32031 6.31616 4.0625 7.06616 4.0625C7.81616 4.0625 8.50757 4.32031 9.14038 4.83594C9.79663 5.32812 10.1248 5.79687 10.1248 6.24219V8.63281C10.1248 9.19531 10.0193 9.80469 9.80835 10.4609C9.62085 11.1172 9.30444 11.6211 8.85913 11.9727C8.55444 12.207 8.41382 12.5352 8.43726 12.957C8.48413 13.3555 8.68335 13.6484 9.03491 13.8359L12.5857 15.8047C12.6091 15.8047 12.6443 15.8164 12.6912 15.8398C12.7615 15.8867 12.8435 15.9336 12.9373 15.9805V17ZM17.0505 12.0078L13.4646 10.0391C14.0505 9.57031 14.4841 8.9375 14.7654 8.14062C15.0466 7.32031 15.1873 6.54688 15.1873 5.82031V3.46484C15.1873 2.66797 14.7419 1.91797 13.8513 1.21484C12.9607 0.488281 11.988 0.125 10.9333 0.125C10.2771 0.125 9.62085 0.289063 8.9646 0.617188C8.33179 0.921875 7.80444 1.32031 7.38257 1.8125C8.10913 1.85937 8.57788 1.91797 8.78882 1.98828C9.42163 1.49609 10.1365 1.25 10.9333 1.25C11.7068 1.25 12.4216 1.50781 13.0779 2.02344C13.7341 2.53906 14.0623 3.01953 14.0623 3.46484V5.82031C14.0623 6.38281 13.9568 6.99219 13.7458 7.64844C13.5349 8.30469 13.2068 8.80859 12.7615 9.16016C12.4333 9.41797 12.281 9.74609 12.3044 10.1445C12.3513 10.543 12.5505 10.8359 12.9021 11.0234L16.5232 12.9922C16.5466 13.0156 16.5818 13.0273 16.6287 13.0273C16.699 13.0742 16.781 13.1328 16.8748 13.2031V14.1875H14.5896C14.824 14.375 15.0232 14.75 15.1873 15.3125H17.0505C17.3083 15.3125 17.531 15.2188 17.7185 15.0312C17.906 14.8438 17.9998 14.6211 17.9998 14.3633V12.957C17.9998 12.793 17.9177 12.6289 17.7537 12.4648C17.5896 12.3008 17.4373 12.1836 17.2966 12.1133L17.0505 12.0078Z"
+                                                    fill="black" />
+                                            </svg>
+                                            <span>Personen</span>
+                                        </div>
+                                        <div class="counter">
+                                            <button class="counter__btn counter__btn--dec minus-number-item"></button>
+                                            <input class="counter__input number-input" type="number" value="4" min="1"
+                                                name="quantity">
+                                            <button class="counter__btn counter__btn--inc plus-number-item"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="recipe-item__btn gr-btn">Toevoegen aan winkelwagen</button>
+                            </div>
+                            <div class="recipe-item odd">
+                                <div class="recipe-item__body">
+                                    <div class="recipe-item__photo"><img src="img/bask3.jpg" alt="">
+                                        <div class="recipe-item__category recipe-category" id="orange">C</div>
+                                    </div>
+                                    <div class="recipe-item__desc">
+                                        <div class="recipe-item__title">Chili sin carne</div>
+                                        <div class="recipe-item__text">Met gepofte pompoenpitten</div>
+                                        <div class="recipe-item__del"></div>
+                                    </div>
+                                </div>
+                                <div class="recipe-item__count">
+                                    <div class="recipe-item__time">30 min</div>
+                                    <div class="recipe-item__counter">
+                                        <div class="icon"><svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.113 14.8203L9.56226 12.8516C10.1482 12.3828 10.5701 11.75 10.8279 10.9531C11.1091 10.1328 11.2498 9.35938 11.2498 8.63281V6.24219C11.2498 5.44531 10.8044 4.69531 9.91382 3.99219C9.04663 3.28906 8.08569 2.9375 7.03101 2.9375C5.99976 2.9375 5.03882 3.30078 4.14819 4.02734C3.25757 4.73047 2.81226 5.46875 2.81226 6.24219V8.63281C2.81226 9.28906 2.95288 10.0391 3.23413 10.8828C3.53882 11.7031 3.98413 12.3594 4.57007 12.8516L0.948975 14.8203C0.316162 15.1016 -0.000244141 15.418 -0.000244141 15.7695V17.1758C-0.000244141 17.4336 0.0935059 17.6562 0.281006 17.8438C0.468506 18.0312 0.691162 18.125 0.948975 18.125H13.113C13.3708 18.125 13.5935 18.0312 13.781 17.8438C13.9685 17.6562 14.0623 17.4336 14.0623 17.1758V15.7695C14.0623 15.6523 14.0271 15.5469 13.9568 15.4531C13.8865 15.3359 13.8044 15.2422 13.7107 15.1719C13.6404 15.1016 13.5583 15.043 13.4646 14.9961C13.3708 14.9258 13.2888 14.8789 13.2185 14.8555L13.113 14.8203ZM12.9373 17H1.12476V16.0156C1.21851 15.9453 1.31226 15.8867 1.40601 15.8398C1.42944 15.8164 1.45288 15.8047 1.47632 15.8047L5.13257 13.8359C5.48413 13.6484 5.67163 13.3555 5.69507 12.957C5.74194 12.5352 5.60132 12.207 5.27319 11.9727C4.85132 11.6211 4.52319 11.1172 4.28882 10.4609C4.05444 9.78125 3.93726 9.17188 3.93726 8.63281V6.24219C3.93726 5.82031 4.26538 5.35156 4.92163 4.83594C5.60132 4.32031 6.31616 4.0625 7.06616 4.0625C7.81616 4.0625 8.50757 4.32031 9.14038 4.83594C9.79663 5.32812 10.1248 5.79687 10.1248 6.24219V8.63281C10.1248 9.19531 10.0193 9.80469 9.80835 10.4609C9.62085 11.1172 9.30444 11.6211 8.85913 11.9727C8.55444 12.207 8.41382 12.5352 8.43726 12.957C8.48413 13.3555 8.68335 13.6484 9.03491 13.8359L12.5857 15.8047C12.6091 15.8047 12.6443 15.8164 12.6912 15.8398C12.7615 15.8867 12.8435 15.9336 12.9373 15.9805V17ZM17.0505 12.0078L13.4646 10.0391C14.0505 9.57031 14.4841 8.9375 14.7654 8.14062C15.0466 7.32031 15.1873 6.54688 15.1873 5.82031V3.46484C15.1873 2.66797 14.7419 1.91797 13.8513 1.21484C12.9607 0.488281 11.988 0.125 10.9333 0.125C10.2771 0.125 9.62085 0.289063 8.9646 0.617188C8.33179 0.921875 7.80444 1.32031 7.38257 1.8125C8.10913 1.85937 8.57788 1.91797 8.78882 1.98828C9.42163 1.49609 10.1365 1.25 10.9333 1.25C11.7068 1.25 12.4216 1.50781 13.0779 2.02344C13.7341 2.53906 14.0623 3.01953 14.0623 3.46484V5.82031C14.0623 6.38281 13.9568 6.99219 13.7458 7.64844C13.5349 8.30469 13.2068 8.80859 12.7615 9.16016C12.4333 9.41797 12.281 9.74609 12.3044 10.1445C12.3513 10.543 12.5505 10.8359 12.9021 11.0234L16.5232 12.9922C16.5466 13.0156 16.5818 13.0273 16.6287 13.0273C16.699 13.0742 16.781 13.1328 16.8748 13.2031V14.1875H14.5896C14.824 14.375 15.0232 14.75 15.1873 15.3125H17.0505C17.3083 15.3125 17.531 15.2188 17.7185 15.0312C17.906 14.8438 17.9998 14.6211 17.9998 14.3633V12.957C17.9998 12.793 17.9177 12.6289 17.7537 12.4648C17.5896 12.3008 17.4373 12.1836 17.2966 12.1133L17.0505 12.0078Z"
+                                                    fill="black" />
+                                            </svg>
+                                            <span>Personen</span>
+                                        </div>
+                                        <div class="counter">
+                                            <button class="counter__btn counter__btn--dec minus-number-item"></button>
+                                            <input class="counter__input number-input" type="number" value="4" min="1"
+                                                name="quantity">
+                                            <button class="counter__btn counter__btn--inc plus-number-item"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="recipe-item__btn gr-btn">Toevoegen aan winkelwagen</button>
+                            </div>
+                            <div class="recipe-item even">
+                                <div class="recipe-item__body">
+                                    <div class="recipe-item__photo"><img src="img/bask4.jpg" alt="">
+                                        <div class="recipe-item__category recipe-category" id="blue">D</div>
+                                    </div>
+                                    <div class="recipe-item__desc">
+                                        <div class="recipe-item__title">Zilvervliesrijst met pompoen en verse salie
+                                        </div>
+                                        <div class="recipe-item__text">Met zongedroogde tomaten en verse tijm</div>
+                                        <div class="recipe-item__del"></div>
+                                    </div>
+                                </div>
+                                <div class="recipe-item__count">
+                                    <div class="recipe-item__time">30 min</div>
+                                    <div class="recipe-item__counter">
+                                        <div class="icon"><svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.113 14.8203L9.56226 12.8516C10.1482 12.3828 10.5701 11.75 10.8279 10.9531C11.1091 10.1328 11.2498 9.35938 11.2498 8.63281V6.24219C11.2498 5.44531 10.8044 4.69531 9.91382 3.99219C9.04663 3.28906 8.08569 2.9375 7.03101 2.9375C5.99976 2.9375 5.03882 3.30078 4.14819 4.02734C3.25757 4.73047 2.81226 5.46875 2.81226 6.24219V8.63281C2.81226 9.28906 2.95288 10.0391 3.23413 10.8828C3.53882 11.7031 3.98413 12.3594 4.57007 12.8516L0.948975 14.8203C0.316162 15.1016 -0.000244141 15.418 -0.000244141 15.7695V17.1758C-0.000244141 17.4336 0.0935059 17.6562 0.281006 17.8438C0.468506 18.0312 0.691162 18.125 0.948975 18.125H13.113C13.3708 18.125 13.5935 18.0312 13.781 17.8438C13.9685 17.6562 14.0623 17.4336 14.0623 17.1758V15.7695C14.0623 15.6523 14.0271 15.5469 13.9568 15.4531C13.8865 15.3359 13.8044 15.2422 13.7107 15.1719C13.6404 15.1016 13.5583 15.043 13.4646 14.9961C13.3708 14.9258 13.2888 14.8789 13.2185 14.8555L13.113 14.8203ZM12.9373 17H1.12476V16.0156C1.21851 15.9453 1.31226 15.8867 1.40601 15.8398C1.42944 15.8164 1.45288 15.8047 1.47632 15.8047L5.13257 13.8359C5.48413 13.6484 5.67163 13.3555 5.69507 12.957C5.74194 12.5352 5.60132 12.207 5.27319 11.9727C4.85132 11.6211 4.52319 11.1172 4.28882 10.4609C4.05444 9.78125 3.93726 9.17188 3.93726 8.63281V6.24219C3.93726 5.82031 4.26538 5.35156 4.92163 4.83594C5.60132 4.32031 6.31616 4.0625 7.06616 4.0625C7.81616 4.0625 8.50757 4.32031 9.14038 4.83594C9.79663 5.32812 10.1248 5.79687 10.1248 6.24219V8.63281C10.1248 9.19531 10.0193 9.80469 9.80835 10.4609C9.62085 11.1172 9.30444 11.6211 8.85913 11.9727C8.55444 12.207 8.41382 12.5352 8.43726 12.957C8.48413 13.3555 8.68335 13.6484 9.03491 13.8359L12.5857 15.8047C12.6091 15.8047 12.6443 15.8164 12.6912 15.8398C12.7615 15.8867 12.8435 15.9336 12.9373 15.9805V17ZM17.0505 12.0078L13.4646 10.0391C14.0505 9.57031 14.4841 8.9375 14.7654 8.14062C15.0466 7.32031 15.1873 6.54688 15.1873 5.82031V3.46484C15.1873 2.66797 14.7419 1.91797 13.8513 1.21484C12.9607 0.488281 11.988 0.125 10.9333 0.125C10.2771 0.125 9.62085 0.289063 8.9646 0.617188C8.33179 0.921875 7.80444 1.32031 7.38257 1.8125C8.10913 1.85937 8.57788 1.91797 8.78882 1.98828C9.42163 1.49609 10.1365 1.25 10.9333 1.25C11.7068 1.25 12.4216 1.50781 13.0779 2.02344C13.7341 2.53906 14.0623 3.01953 14.0623 3.46484V5.82031C14.0623 6.38281 13.9568 6.99219 13.7458 7.64844C13.5349 8.30469 13.2068 8.80859 12.7615 9.16016C12.4333 9.41797 12.281 9.74609 12.3044 10.1445C12.3513 10.543 12.5505 10.8359 12.9021 11.0234L16.5232 12.9922C16.5466 13.0156 16.5818 13.0273 16.6287 13.0273C16.699 13.0742 16.781 13.1328 16.8748 13.2031V14.1875H14.5896C14.824 14.375 15.0232 14.75 15.1873 15.3125H17.0505C17.3083 15.3125 17.531 15.2188 17.7185 15.0312C17.906 14.8438 17.9998 14.6211 17.9998 14.3633V12.957C17.9998 12.793 17.9177 12.6289 17.7537 12.4648C17.5896 12.3008 17.4373 12.1836 17.2966 12.1133L17.0505 12.0078Z"
+                                                    fill="black" />
+                                            </svg>
+                                            <span>Personen</span>
+                                        </div>
+                                        <div class="counter">
+                                            <button class="counter__btn counter__btn--dec minus-number-item"></button>
+                                            <input class="counter__input number-input" type="number" value="4" min="1"
+                                                name="quantity">
+                                            <button class="counter__btn counter__btn--inc plus-number-item"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="recipe-item__btn gr-btn">Toevoegen aan winkelwagen</button>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <section class="contact">
+            <div class="contact__wrap container">
+                <div class="contact__head">
+                    <h2 class="contact__title section-title">Neem contact op</h2>
+                    <div class="contact__desc section-desc">Vul het onderstaande formulier in voor contact met Verdify
+                    </div>
+                </div>
+                <form class="contact__form c-form">
+                    <input class="c-form__input" type="text" placeholder="Volledige naam">
+                    <input class="c-form__input" type="mail" placeholder="E-mailadres">
+                    <textarea class="c-form__input" rows="7" placeholder="Bericht"></textarea>
+                    <div class="c-form__btn">
+                        <button class="or-btn" type="submit">Verzend</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrap container">
+            <div class="footer__top">
+                <div class="footer__logo"><a href="#"><img src="img/f-logo.png" alt=""></a><span>Maakt het makkelijk om
+                        dagelijks lekker en gezond te eten, zelfs met dieetrestricties</span></div>
+                <div class="footer__right">
+                    <nav class="footer__menu f-menu">
+                        <ul class="f-menu__wrap">
+                            <li class="f-menu__item"><a class="f-menu__link" href="#">Voordelen</a></li>
+                            <li class="f-menu__item"><a class="f-menu__link" href="#">Hoe werkt het</a></li>
+                            <li class="f-menu__item"><a class="f-menu__link" href="#">Personalisatie</a></li>
+                            <li class="f-menu__item"><a class="f-menu__link" href="#">Recepten</a></li>
+                            <li class="f-menu__item"><a class="f-menu__link" href="#">Blog</a></li>
+                            <li class="f-menu__item"><a class="f-menu__link" href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__socials f-socials"><a class="f-socials__link" href="#"><svg width="19"
+                                height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.3553 17V8.99906H12.5639L12.8566 6.2419H10.3553L10.359 4.86191C10.359 4.1428 10.4274 3.75748 11.4602 3.75748H12.8409V1H10.632C7.97875 1 7.04487 2.33752 7.04487 4.58682V6.24221H5.39099V8.99938H7.04487V17H10.3553Z"
+                                    fill="#F5F6F6" />
+                            </svg>
+                        </a><a class="f-socials__link" href="#"><svg width="19" height="18" viewBox="0 0 19 18"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.1599 5.51733L9.19459 6.08923L8.61654 6.0192C6.51246 5.75076 4.67428 4.84039 3.11356 3.31143L2.35054 2.55279L2.15401 3.11301C1.73782 4.36186 2.00372 5.68073 2.87078 6.56776C3.33322 7.05796 3.22917 7.12799 2.43147 6.8362C2.15401 6.74283 1.91123 6.6728 1.88811 6.70782C1.80718 6.78952 2.08464 7.85162 2.3043 8.27179C2.60488 8.85536 3.21761 9.42726 3.88814 9.76574L4.45463 10.0342L3.78409 10.0458C3.13668 10.0458 3.11356 10.0575 3.18293 10.3026C3.41415 11.0613 4.32746 11.8666 5.34481 12.2167L6.06159 12.4618L5.4373 12.8353C4.51243 13.3722 3.42571 13.6757 2.33898 13.699C1.81874 13.7107 1.39099 13.7574 1.39099 13.7924C1.39099 13.9091 2.80142 14.5627 3.62224 14.8195C6.08471 15.5781 9.00961 15.2513 11.2062 13.9558C12.7669 13.0337 14.3276 11.2013 15.056 9.42726C15.449 8.48188 15.8421 6.7545 15.8421 5.92583C15.8421 5.38895 15.8768 5.31892 16.5242 4.67699C16.9057 4.3035 17.2641 3.895 17.3334 3.77829C17.4491 3.55653 17.4375 3.55653 16.8479 3.75494C15.8652 4.10509 15.7265 4.0584 16.212 3.53319C16.5704 3.1597 16.9982 2.48276 16.9982 2.28434C16.9982 2.24933 16.8248 2.30769 16.6282 2.41273C16.4201 2.52944 15.9577 2.70451 15.6109 2.80956L14.9866 3.00797L14.4201 2.62281C14.108 2.41273 13.6686 2.1793 13.4374 2.10927C12.8478 1.94587 11.9461 1.96921 11.4143 2.15596C9.96917 2.68117 9.05586 4.03506 9.1599 5.51733Z"
+                                    fill="#F5F6F6" />
+                            </svg>
+                        </a><a class="f-socials__link" href="#"><svg width="19" height="18" viewBox="0 0 19 18"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.06584 1.00234C8.86851 1.00226 8.68564 1.00217 8.51566 1.00244V1C6.69688 1.00203 6.348 1.01423 5.44776 1.05489C4.49629 1.0986 3.97969 1.25718 3.6357 1.39136C3.18029 1.56865 2.855 1.78009 2.51345 2.12164C2.17189 2.4632 1.96005 2.78849 1.78317 3.24389C1.6496 3.58789 1.49061 4.10428 1.4471 5.05576C1.40034 6.08449 1.39099 6.39189 1.39099 8.99787C1.39099 11.6038 1.40034 11.9129 1.4471 12.9416C1.49041 13.8931 1.6496 14.4095 1.78317 14.7531C1.96045 15.2087 2.17189 15.5331 2.51345 15.8747C2.855 16.2163 3.18029 16.4277 3.6357 16.6046C3.97989 16.7381 4.49629 16.8971 5.44776 16.941C6.47649 16.9878 6.78532 16.998 9.39109 16.998C11.9967 16.998 12.3057 16.9878 13.3344 16.941C14.2859 16.8975 14.8027 16.739 15.1463 16.6048C15.6019 16.4279 15.9262 16.2165 16.2677 15.8749C16.6093 15.5336 16.8211 15.2093 16.998 14.7539C17.1316 14.4103 17.2906 13.8939 17.3341 12.9424C17.3808 11.9137 17.391 11.6047 17.391 9.00031C17.391 6.39595 17.3808 6.08693 17.3341 5.0582C17.2908 4.10672 17.1316 3.59033 16.998 3.24674C16.8207 2.79133 16.6093 2.46604 16.2677 2.12449C15.9264 1.78293 15.6017 1.57149 15.1463 1.39462C14.8023 1.26105 14.2859 1.10206 13.3344 1.05855C12.3055 1.01179 11.9967 1.00244 9.39109 1.00244L9.06584 1.00234ZM13.4292 3.79343C13.4292 3.14671 13.9537 2.62279 14.6002 2.62279V2.62238C15.2467 2.62238 15.7712 3.14691 15.7712 3.79343C15.7712 4.43994 15.2467 4.96447 14.6002 4.96447C13.9537 4.96447 13.4292 4.43994 13.4292 3.79343ZM9.39109 3.99104C6.62348 3.99104 4.37959 6.23493 4.37959 9.00254C4.37959 11.7701 6.62348 14.013 9.39109 14.013C12.1587 14.013 14.4018 11.7701 14.4018 9.00254C14.4018 6.235 12.1586 3.99115 9.39109 3.99104ZM12.644 9.00254C12.644 7.20592 11.1875 5.74964 9.39109 5.74964C7.59448 5.74964 6.13819 7.20592 6.13819 9.00254C6.13819 10.799 7.59448 12.2554 9.39109 12.2554C11.1875 12.2554 12.644 10.799 12.644 9.00254Z"
+                                    fill="#F5F6F6" />
+                            </svg>
+                        </a><a class="f-socials__link" href="#"><svg width="19" height="18" viewBox="0 0 19 18"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.24907 2.7798C5.22681 1.7695 4.50434 1 3.33116 1C2.15798 1 1.39099 1.7695 1.39099 2.7798C1.39099 3.76917 2.13531 4.56084 3.28664 4.56084H3.30856C4.50434 4.56084 5.24907 3.76917 5.24907 2.7798ZM5.0232 5.96724H1.59378V16.2712H5.0232V5.96724ZM13.4424 5.72528C15.6992 5.72528 17.391 7.19829 17.391 10.3632L17.3909 16.2712H13.9616V10.7586C13.9616 9.37393 13.4653 8.42907 12.2239 8.42907C11.2764 8.42907 10.7121 9.06604 10.4642 9.68126C10.3735 9.90175 10.3513 10.2089 10.3513 10.5169V16.2715H6.92145C6.92145 16.2715 6.96665 6.93438 6.92145 5.96751H10.3513V7.42698C10.8064 6.72539 11.6216 5.72528 13.4424 5.72528Z"
+                                    fill="#F5F6F6" />
+                            </svg>
+                        </a></nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copyrights">Copyright Verdify 2019 - All Rights Reserved</div>
+                <div class="footer__links"><a href="#">Algemene voorwaarden</a><span>|</span><a href="#">Privacy
+                        verklaring</a></div>
+            </div>
+        </div>
+    </footer>
+    <div class="hidden">
+        <div class="modal-window" id="modalform">
+            <div class="modal-window__content"></div>
+            <div class="modal-window__close popup-close"></div>
+        </div>
+    </div>
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
